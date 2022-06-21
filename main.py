@@ -10,7 +10,8 @@ ROOT.PyConfig.IgnoreCommandLineOptions = True
 ROOT.gROOT.SetBatch(ROOT.kTRUE)
 # Tell ROOT not to be in charge of memory, fix issue of histograms being deleted when ROOT file is closed:
 ROOT.TH1.AddDirectory(False)
-
+#
+ROOT.gStyle.SetOptStat(111111)
 
 #Caleb Defined Function
 
