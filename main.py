@@ -71,27 +71,28 @@ for i in range(nEvents): # Using the number of Events for looping
     LowPtElectron_convVeto   = tree.LowPtElectron_convVeto
     
     for j in range(nLowPtElectron):
-            if verbose:
-                #print("LowPtElectron {0}: pt = {1:.3f}, eta = {2:.3f}, phi = {3:.3f}, mass = {4:.3f}".format(j, LowPtElectron_pt[j], LowPtElectron_eta[j], LowPtElectron_phi[j], LowPtElectron_mass[j]))
-            ID_Lw.Fill(LowPtElectron_ID[j])
-            pt_Lw.Fill(LowPtElectron_pt[j])
-            eta_Lw.Fill(LowPtElectron_eta[j])
-            dxy_Lw.Fill(LowPtElectron_dxy[j])
-            dxyErr_Lw.Fill(LowPtElectron_dxyErr[j])
-            dz_Lw.Fill(LowPtElectron_dz[j])
-            dzErr_Lw.Fill(LowPtElectron_dzErr[j])
-            miniPFRelIso_all_Lw.Fill(LowPtElectron_miniPFRelIso_all[j])
-            convVeto_Lw.Fill(LowPtElectron_convVeto[j])
-            n_Lw.Fill(nLowPtElectron[j])
-            
-      plot(ID_Lw, sample_name, plot_dir, "ID")
-      plot(pt_Lw, sample_name, plot_dir, "ptt")
-      plot(eta_Lw, sample_name, plot_dir, "eta")
-      plot(dxy_Lw, sample_name, plot_dir, "dxy")
-      plot(dxyErr_Lw, sample_name, plot_dir, "dxyErr")
-      plot(dz_Lw, sample_name, plot_dir, "dz")
-      plot(dzErr_Lw, sample_name, plot_dir, "dzErr")
-      plot(miniPFRelIso_all_Lw, sample_name, plot_dir, "miniPFRelIso")
-      plot(convVeto_Lw, sample_name, plot_dir, "convVeto")
-      plot(n_Lw, sample_name, plot_dir, "n_Lw")
+        if verbose:
+            #print("LowPtElectron {0}: pt = {1:.3f}, eta = {2:.3f}, phi = {3:.3f}, mass = {4:.3f}".format(j, LowPtElectron_pt[j], LowPtElectron_eta[j], LowPtElectron_phi[j], LowPtElectron_mass[j]))
+        ID_Lw.Fill(LowPtElectron_ID[j])
+        pt_Lw.Fill(LowPtElectron_pt[j])
+        eta_Lw.Fill(LowPtElectron_eta[j])
+        dxy_Lw.Fill(LowPtElectron_dxy[j])
+        dxyErr_Lw.Fill(LowPtElectron_dxyErr[j])
+        dz_Lw.Fill(LowPtElectron_dz[j])
+        dzErr_Lw.Fill(LowPtElectron_dzErr[j])
+        miniPFRelIso_all_Lw.Fill(LowPtElectron_miniPFRelIso_all[j])
+        convVeto_Lw.Fill(LowPtElectron_convVeto[j])
+        n_Lw.Fill(nLowPtElectron[j])
+     
+       
+    plot(ID_Lw, sample_name, plot_dir, "ID")
+    plot(pt_Lw, sample_name, plot_dir, "ptt")
+    plot(eta_Lw, sample_name, plot_dir, "eta")
+    plot(dxy_Lw, sample_name, plot_dir, "dxy")
+    plot(dxyErr_Lw, sample_name, plot_dir, "dxyErr")
+    plot(dz_Lw, sample_name, plot_dir, "dz")
+    plot(dzErr_Lw, sample_name, plot_dir, "dzErr")
+    plot(miniPFRelIso_all_Lw, sample_name, plot_dir, "miniPFRelIso")
+    plot(convVeto_Lw, sample_name, plot_dir, "convVeto")
+    plot(n_Lw, sample_name, plot_dir, "n_Lw")
      
