@@ -43,15 +43,15 @@ nEvents = tree.GetEntries()
 plo = "Pretty_Plots"
 
 
-ID_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
-pt_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
-eta_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
-dxy_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
-dxyErr_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
-dz_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
-dzErr_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
-miniPFRelIso_all_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
-convVeto_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
+ID_Lw =ROOT.TH1F("ID", "ID",45,-1,8)#, 20, 0.0, 20.0)
+pt_Lw =ROOT.TH1F("pt","pt",30,0,300)#, 20, 0.0, 20.0)
+eta_Lw =ROOT.TH1F("eta","eta", 30,-3,3)#, 20, 0.0, 20.0)
+dxy_Lw =ROOT.TH1F("dxy","dxy", 20,-1,1)#, 20, 0.0, 20.0)
+dxyErr_Lw =ROOT.TH1F("dxyErr", "dxyErr", 60,0,0.6 )#, 20, 0.0, 20.0)
+dz_Lw =ROOT.TH1F("dz","dz",30,-15,15)#, 20, 0.0, 20.0)
+dzErr_Lw =ROOT.TH1F("dzErr","dzErr", 60,0,0.6)#, 20, 0.0, 20.0)
+miniPFRelIso_all_Lw =ROOT.TH1F("PF","Pf",150,0,150)#, 20, 0.0, 20.0)
+convVeto_Lw =ROOT.TH1F("Veto","Veto",20,0,2)#, 20, 0.0, 20.0)
 n_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
 
 # Sorting Through the Events
