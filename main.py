@@ -43,16 +43,16 @@ nEvents = tree.GetEntries()
 plo = "Pretty_Plots"
 
 
-ID_Lw = ()#, 20, 0.0, 20.0)
-pt_Lw = ()#, 20, 0.0, 20.0)
-eta_Lw = ()#, 20, 0.0, 20.0)
-dxy_Lw = ()#, 20, 0.0, 20.0)
-dxyErr_Lw = ()#, 20, 0.0, 20.0)
-dz_Lw = ()#, 20, 0.0, 20.0)
-dzErr_Lw = ()#, 20, 0.0, 20.0)
-miniPFRelIso_all_Lw = ()#, 20, 0.0, 20.0)
-convVeto_Lw = ()#, 20, 0.0, 20.0)
-n_Lw = ()#, 20, 0.0, 20.0)
+ID_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
+pt_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
+eta_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
+dxy_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
+dxyErr_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
+dz_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
+dzErr_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
+miniPFRelIso_all_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
+convVeto_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
+n_Lw =ROOT.TH1F()#, 20, 0.0, 20.0)
 
 # Sorting Through the Events
 
